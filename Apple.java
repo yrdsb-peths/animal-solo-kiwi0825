@@ -18,4 +18,5 @@ public class Apple extends Actor
         int y = getY() + 1;
         setLocation(x, y);
     }
+    
 }
