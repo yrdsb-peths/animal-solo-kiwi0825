@@ -11,19 +11,15 @@ public class Elephant extends Actor
 {    
     public void act()
     {
+        // moves the elephant left and right by one unit
         if (Greenfoot.isKeyDown("left")) {
             move(-1);
         } else if (Greenfoot.isKeyDown("right")) {
             move(1);
         }
         
-        if(isTouching(Apple.class)) {
-            removeTouching(null);
-        }
+        // remove apple if elephant eats it
+        removeTouching(Apple.class);
     }
     
-    public void eat() {
-        MyWorld world = (MyWorld) getWorld();
-        world.spawnApple();
-    }
 }

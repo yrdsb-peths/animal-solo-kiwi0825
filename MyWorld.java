@@ -8,7 +8,7 @@ import greenfoot.*;
  */
 
 public class MyWorld extends World {
-    /*
+    /**
      * Constructor for objects of class MyWorld.
      */
     public MyWorld() {
@@ -18,11 +18,20 @@ public class MyWorld extends World {
         Elephant elephant = new Elephant();
         addObject(elephant, 300, 300);
         
-        spawnApple();
-    }
-    
-    public void spawnApple() {
         Apple apple = new Apple();
         addObject(apple, 300, 0);
+        
+        
     }
+    
+    /**
+     * Create a new apple at random location at top of screen
+     */
+    public void createApple() {
+        Apple apple = new Apple();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(apple, 300, 0);
+    }
+    
 }
