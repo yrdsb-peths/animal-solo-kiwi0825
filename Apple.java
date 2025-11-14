@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Apple here.
+ * Food for our elephant.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kelly 
+ * @version November 2025
  */
 public class Apple extends Actor
 {
@@ -15,7 +15,7 @@ public class Apple extends Actor
     public void act()
     {
         int x = getX();
-        int y = getY() + 2;
+        int y = getY() + 1;
         setLocation(x, y);
     }
 }

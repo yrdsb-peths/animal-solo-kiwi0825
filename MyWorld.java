@@ -1,11 +1,22 @@
 import greenfoot.*;
 
+/**
+ * The World our hero lives in.
+ * 
+ * @author Kelly
+ * @version November 2025
+ */
+
 public class MyWorld extends World {
+    /*
+     * Constructor for objects of class MyWorld.
+     */
     public MyWorld() {
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
         
         Elephant elephant = new Elephant();
-        addObject(elephant, 300, 200);
+        addObject(elephant, 300, 300);
         
         spawnApple();
     }
